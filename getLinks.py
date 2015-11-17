@@ -17,9 +17,8 @@ def getInternalLinks(bsObj, includeUrl):
                 internalLinks.append(link.attrs['href'])
     return internalLinks
 
+
 # Retrieves a list of all external links found on a page
-
-
 def getExternalLinks(bsObj, excludeUrl):
     excludeUrl = splitAddress(excludeUrl)[0]
     externalLinks = []
